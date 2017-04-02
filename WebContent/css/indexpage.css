@@ -1,0 +1,113 @@
+@import "bourbon";
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700);
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
+
+$shadow-color: #23203b;
+$input-color: lighten(#AB9E95, 10%);
+$input-border-color: #5E5165;
+$button-background-color: #27AE60;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html { 
+  background: url(../images/pr.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+   background-repeat:no-repeat;
+  background-size:100% 100vh;
+}
+
+body {
+  background: transparent;
+}
+
+body, input, button {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.headdiv {
+	padding: -10px;
+	margin: 5px;
+	border-style : solid;
+	border-color: black;
+}
+
+.timer {
+  width: 300px;
+  height: 60px;
+  background-size: cover;
+  background-color: lime;
+  margin-left: -20px;
+  margin-top: -30px;
+  border-style: solid;
+}
+
+#start {
+  display:inline-block;
+  float:left; 
+  width: 7%; 
+  position: relative; 
+  padding: 14px;
+  margin-top : -30px; */
+  margin-left: 20px;
+}
+
+#lbl{
+  display:inline-block;
+  float:left; 
+  width: 60%; 
+  position: relative; 
+  padding: 14px;
+  margin-top : -30px; 
+}
+
+.dropdown-menu {
+    width: 300px !important;
+    height: 400px !important;
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+.dropdown {
+	width: 300px !important;
+    height: 50px !important;
+    margin-top: 0px;
+    margin-left: -120px;
+	
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.prjlbl {
+	margin-top: -130px;
+    margin-left: -118px;
+}
+
+.form-control {
+	width: 20%;
+}
+
+#invoice {
+  display:inline-block;
+  float:left; 
+  width: 30%; 
+  position: relative; 
+  padding: 14px;
+  margin-top : -60px;
+  margin-left: 900px;
+}

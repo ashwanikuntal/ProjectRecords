@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>ProjectRecords</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <listener>
+    <listener-class>org.projectdiaries.utility.MyDbConnectionListener</listener-class>
+  </listener>
+  
+  <context-param>
+    <param-name>url</param-name>
+    <param-value>jdbc:mysql://localhost:3306/projectdiaries</param-value>
+  </context-param>
+  
+  <context-param>
+    <param-name>user</param-name>
+    <param-value>root</param-value>
+  </context-param>
+  
+  <context-param>
+    <param-name>password</param-name>
+    <param-value>akuntal</param-value>
+  </context-param>
+  
+  <servlet>
+    <servlet-name>ProjectAddController</servlet-name>
+    <servlet-class>org.projectdiaries.controller.ProjectAddController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ProjectAddController</servlet-name>
+    <url-pattern>/ProjectAddController</url-pattern>
+  </servlet-mapping>
+</web-app>
